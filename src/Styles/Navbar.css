@@ -1,0 +1,76 @@
+@import url("http://fonts.cdnfonts.com/css/li-ador-noirrit");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+.Navbar {
+  background-color: #9494b8;;
+  color: #fffdfd;
+}
+.Navbar ul li {
+  color: #ffffff;
+  list-style: none;
+  text-transform: capitalize;
+  display: flex;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: lighter; 
+  font-family: "Li Ador Noirrit", sans-serif;
+  margin-top: 10px;
+}
+
+#Logo{
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+.Navbar ul li #Nav {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fcfbff;
+  list-style: none;
+  display: flex;
+  margin-left: 6px;
+  font-size: 16px;
+  font-family: "Li Ador Noirrit", sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.Navbar ul {
+  display: flex;
+  margin-left: 20px;
+}
+
+#Button{
+
+}
+
+@media only screen and (max-width: 600px) {
+  #Menu {
+    color: #f9f7ff;
+  }
+  
+  .Navbar ul {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    margin-left: 0px;
+    
+  }
+  .Navbar ul li {
+    text-align: center;
+  }
+  #Nav{
+    text-align: center;
+   
+  }
+  
+  #Logo{
+    display: none;
+  }
+  #Nav-Logo{
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+  }
+}
