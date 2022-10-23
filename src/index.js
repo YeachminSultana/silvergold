@@ -9,14 +9,13 @@ import { Auth0Provider } from "@auth0/auth0-react";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Auth0Provider
-      domain="dev-pprmfcdi4c3tu5xh.us.auth0.com"
-      clientId="BK2kkYtKpBTHr77DjpjTy4cVKX4Ss75O"
-      redirectUri={window.location.origin}
-    >
-      {" "}
-      <App />
-    </Auth0Provider>
+     <Auth0Provider
+    domain="dev-kc51gr1pb54ypgdb.us.auth0.com"
+    clientId="s1y6I3uRFAm7gGAGYjavxAI7n1tsd1XP"
+    redirectUri={window.location.origin}
+  >
+    <App />
+  </Auth0Provider>,
   </BrowserRouter>
 );
 

@@ -169,35 +169,31 @@ function Navigation(props) {
                   About us
                 </Link>
               </li>
-              <li>
-                {isAuthenticated ? (
-                  <li>
-                    <Button  id='Button'
-                   variant="contained"
-                      onClick={() =>
-                        logout({ returnTo: window.location.origin })
-                      }
-                    >
-                      Log Out
-                    </Button>
-                  </li>
-                ) : (
-                  <li>
-                    <Button id='Button' variant="contained" onClick={() => loginWithRedirect()}>
-                      Log In
-                    </Button>
-                  </li>
-                )}
-              </li>
-             {
-               isAuthenticated && (
+
+              {isAuthenticated ? (
+                <li>
+                  <Link
+                    id="Nav"
+                    onClick={() => logout({ returnTo: window.location.origin })}
+                  >
+                    Log Out
+                  </Link>
+                </li>
+              ) : (
+                <li>
+                  <Link id="Nav" onClick={() => loginWithRedirect()}>
+                    Log In
+                  </Link>
+                </li>
+              )}
+
+             { /*{isAuthenticated && (
                 <div>
                   <img src={user.picture} alt={user.name} />
                   <h2>{user.name}</h2>
                   <p>{user.email}</p>
                 </div>
-                )
-             }
+              )}*/}
             </ul>
           </Box>
         </Toolbar>

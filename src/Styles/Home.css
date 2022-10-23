@@ -15,9 +15,9 @@
 }
 .Container .Intro-text h1 {
   font-size: 50px;
-  color: rgb(6, 8, 19);
+  color: #fff;
   font-family: "Roboto", sans-serif;
-  text-shadow: 2px 2px #b8acac;
+  text-shadow: 2px 2px #fee505;
 
   font-weight: 600;
 }
@@ -221,7 +221,7 @@
     display: grid;
     grid-gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    background: rgb(2, 0, 36);
+    background: #276266;
     background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 1) 0%,

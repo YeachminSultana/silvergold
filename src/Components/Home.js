@@ -54,14 +54,14 @@ export default function Home() {
         style={{
           backgroundImage: `url("https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1596&q=80")`,
           backgroundSize: "cover",
-          height: "90vh",
+          height: "100vh",
           overflow: "hidden",
         }}
       >
         <div className="Intro-text">
-          <h1>In the mindset of exclusivity</h1>
+          <h1>Find Your Sweet Home</h1>
           <p>
-            Searching for the perfect place to live on? Well, look no further,
+            <h2>Searching for the perfect place to live on?</h2> Well, look no further,
             as bdHousing is here with everything you have been looking for with
             the largest real estate marketing portal in Bangladesh.
           </p>

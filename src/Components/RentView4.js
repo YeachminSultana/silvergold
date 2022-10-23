@@ -11,17 +11,32 @@ import RoofingIcon from "@mui/icons-material/Roofing";
 import NetworkCheckIcon from "@mui/icons-material/NetworkCheck";
 import SpaIcon from "@mui/icons-material/Spa";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-
+import SimpleImageSlider from "react-simple-image-slider";
 
 export default function RentView1() {
+  const images1 = [
+    {
+      url: " https://i.ibb.co/xLj7wBy/6d82dd41-7d6d-4ec2-ba29-97c4c0c863cd.jpg",
+    },
+    {
+      url: "https://i.ibb.co/NKjMhMN/3c9b201d-2030-47fc-815c-7b855d966a3d.jpg",
+    },
+    {
+      url: "https://i.ibb.co/JzfrVp1/231f6902-2544-4cf5-bc43-677ea2998ab8.jpg",
+    },
+  ];
   return (
     <div className="open">
       <div className="Info-open">
-        <img
-          src="https://i.ibb.co/fXxcjLj/909a9ef1-3b09-4466-b65e-fa258d4fb69a.jpg"
-          alt="909a9ef1-3b09-4466-b65e-fa258d4fb69a"
-          border="0"
-        />
+      <div className="Slide">
+          <SimpleImageSlider
+            width={1200}
+            height={600}
+            images={images1}
+            showBullets={true}
+            showNavs={true}
+          />
+        </div>
         <div className="Basic-info">
           <h1>6000 BDT </h1>
           <br />

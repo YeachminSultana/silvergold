@@ -10,18 +10,40 @@ import BrightnessAutoIcon from "@mui/icons-material/BrightnessAuto";
 import RoofingIcon from "@mui/icons-material/Roofing";
 import NetworkCheckIcon from "@mui/icons-material/NetworkCheck";
 import SpaIcon from "@mui/icons-material/Spa";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import SimpleImageSlider from "react-simple-image-slider";
 
 export default function RentView1() {
+  const images1 = [
+    {
+      url: " https://i.ibb.co/xLj7wBy/6d82dd41-7d6d-4ec2-ba29-97c4c0c863cd.jpg",
+    },
+    {
+      url: "https://i.ibb.co/NKjMhMN/3c9b201d-2030-47fc-815c-7b855d966a3d.jpg",
+    },
+    {
+      url: "https://i.ibb.co/JzfrVp1/231f6902-2544-4cf5-bc43-677ea2998ab8.jpg",
+    },
+  ];
   return (
     <div className="open">
       <div className="Info-open">
-      <img src="https://i.ibb.co/Gdfxb6N/2280671d-55a5-49d4-a407-8481cf8dd5bb-1.jpg" alt="2280671d-55a5-49d4-a407-8481cf8dd5bb-1" border="0" />
+        <div className="Slide">
+          <SimpleImageSlider
+            width={1200}
+            height={600}
+            images={images1}
+            showBullets={true}
+            showNavs={true}
+          />
+        </div>
         <div className="Basic-info">
           <h1>67800 BDT </h1>
           <br />
-          <h2><LocationOnIcon/> Cumilla,Police line</h2> <br />
+          <h2>
+            <LocationOnIcon /> Cumilla,Police line
+          </h2>{" "}
+          <br />
           <h5>For rental purpose nice 65340 sq ft flat</h5>
           <br />
           <span id="bed">
@@ -65,7 +87,11 @@ export default function RentView1() {
             24 hour Internet <NetworkCheckIcon />
           </span>
           <br />
-          <h1 id="map"> <LocationOnIcon/>Location</h1>
+          <h1 id="map">
+            {" "}
+            <LocationOnIcon />
+            Location
+          </h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.973695524597!2d91.17324106429112!3d23.4614133056727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37547f287795961d%3A0x5269a27967f68627!2sTalpukur!5e0!3m2!1sen!2sbd!4v1666408917441!5m2!1sen!2sbd"
             width="1000"
